@@ -97,3 +97,29 @@ footer {
 a:hover{
     color: grey;
 }
+
+#mittentextengrid{
+    display: grid;
+    height: 700px;
+    grid-template-columns: 1.3fr 1.5fr 0.3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "img div "
+    ;
+}
+
+#mittentext{
+    grid-area: div;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#mittentextimg{
+    grid-area: img;
+}
+
+#photoshop{
+    width: 400px;
+    margin: 20px;
+}
