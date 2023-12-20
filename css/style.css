@@ -102,9 +102,10 @@ a:hover{
     display: grid;
     height: 700px;
     grid-template-columns: 1.3fr 1.5fr 0.3fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "img div "
+    "txt div"
     ;
 }
 
@@ -121,5 +122,26 @@ a:hover{
 
 #photoshop{
     width: 400px;
-    margin: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+#text{
+    grid-area: txt;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#txt {
+    width: 400px;
+    margin-right: 80px;
+}
+
+#img_title{
+    display: flex;
+    justify-content: center;
+    margin-right: 90px;
+    font-size:2rem;
 }
